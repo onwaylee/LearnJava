@@ -17,12 +17,15 @@ import java.lang.Math;
 public class MainClass_11 {
     public static int[] stringToIntegerArray(String input) {
         input = input.trim();
+//        System.out.println("input after trim: "+input);
         input = input.substring(1, input.length() - 1);
+//        System.out.println("input after substring: "+input);
         if (input.length() == 0) {
           return new int[0];
         }
     
         String[] parts = input.split(",");
+//        System.out.println("input after split: "+parts);
         int[] output = new int[parts.length];
         for(int index = 0; index < parts.length; index++) {
             String part = parts[index].trim();
